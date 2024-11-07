@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Trilha Ecológica",
+    "slug": "utfpr_trilha",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo-trilha.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-trilha.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#AFD6C4"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "trilha-ecologica-utfpr"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon-trilha.png",
+        "backgroundColor": "#AFD6C4"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.utfpr.trilha_ecologica_dv"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6b969532-387d-4d58-8fab-78af46d9fd13"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6b969532-387d-4d58-8fab-78af46d9fd13"
+    },
+    "owner": "entityblackhawk"
+  }
+}
